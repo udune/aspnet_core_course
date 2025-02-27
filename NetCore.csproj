@@ -7,39 +7,41 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="NetCore Services\**" />
-      <Compile Remove="NetCore.Data\**" />
+        <ProjectReference Include="NetCore_Data\NetCore_Data.csproj" />
+        <ProjectReference Include="NetCore_Services\NetCore_Services.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Remove="NetCore Services\**" />
-      <EmbeddedResource Remove="NetCore.Data\**" />
+      <Compile Remove="NetCore_Data\**" />
+      <Compile Remove="NetCore_Services\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Remove="NetCore Services\**" />
-      <Content Remove="NetCore.Data\**" />
+      <EmbeddedResource Remove="NetCore_Data\**" />
+      <EmbeddedResource Remove="NetCore_Services\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="NetCore Services\**" />
-      <None Remove="NetCore.Data\**" />
+      <Content Remove="NetCore_Data\**" />
+      <Content Remove="NetCore_Services\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <_ContentIncludedByDefault Remove="NetCore Services\appsettings.Development.json" />
-      <_ContentIncludedByDefault Remove="NetCore Services\appsettings.json" />
-      <_ContentIncludedByDefault Remove="NetCore Services\obj\NetCore Services.csproj.nuget.dgspec.json" />
-      <_ContentIncludedByDefault Remove="NetCore Services\obj\project.assets.json" />
-      <_ContentIncludedByDefault Remove="NetCore Services\obj\project.packagespec.json" />
-      <_ContentIncludedByDefault Remove="NetCore Services\Properties\launchSettings.json" />
-      <_ContentIncludedByDefault Remove="NetCore.Data\obj\NetCore.Data.csproj.nuget.dgspec.json" />
-      <_ContentIncludedByDefault Remove="NetCore.Data\obj\project.assets.json" />
-      <_ContentIncludedByDefault Remove="NetCore.Data\obj\project.packagespec.json" />
+      <None Remove="NetCore_Data\**" />
+      <None Remove="NetCore_Services\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="NetCore.Services\NetCore.Services.csproj" />
+      <_ContentIncludedByDefault Remove="NetCore_Data\obj\NetCore.Data.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Data\obj\NetCoreData.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Data\obj\NetCore_Data.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Data\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Data\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Services\obj\NetCore Services.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Services\obj\NetCore.Services.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Services\obj\NetCore_Services.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Services\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Services\obj\project.packagespec.json" />
     </ItemGroup>
 
 </Project>

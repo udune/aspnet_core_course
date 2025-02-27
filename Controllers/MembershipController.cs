@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using NetCore_Services.Interfaces;
-using NetCore_Services.Services;
 using NetCore.Data.ViewModels;
 
 namespace NetCore.Controllers;
 
 public class MembershipController : Controller
 {
-    private IUser user = new UserService();
+    private IUser user;
+
+    public MembershipController(IUser user)
+    {
+        this.user = user;
+    }
     
     // GET
     public IActionResult Index()

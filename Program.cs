@@ -1,3 +1,6 @@
+using NetCore_Services.Interfaces;
+using NetCore_Services.Services;
+
 namespace NetCore;
 
 public class Program
@@ -8,6 +11,8 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+        builder.Services.AddScoped<IUser, UserService>();
+        builder.Services.AddMvc();
 
         var app = builder.Build();
 
