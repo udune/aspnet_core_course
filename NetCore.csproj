@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="NetCore Services\**" />
+      <Compile Remove="NetCore.Data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="NetCore Services\**" />
+      <EmbeddedResource Remove="NetCore.Data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="NetCore Services\**" />
+      <Content Remove="NetCore.Data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="NetCore Services\**" />
+      <None Remove="NetCore.Data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="NetCore Services\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="NetCore Services\appsettings.json" />
+      <_ContentIncludedByDefault Remove="NetCore Services\obj\NetCore Services.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore Services\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="NetCore Services\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="NetCore Services\Properties\launchSettings.json" />
+      <_ContentIncludedByDefault Remove="NetCore.Data\obj\NetCore.Data.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore.Data\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="NetCore.Data\obj\project.packagespec.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="NetCore.Services\NetCore.Services.csproj" />
+    </ItemGroup>
+
+</Project>
