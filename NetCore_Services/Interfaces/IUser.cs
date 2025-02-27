@@ -1,4 +1,4 @@
-using NetCore.Data.ViewModels;
+using NetCore_Data.ViewModels;
 
 namespace NetCore_Services.Interfaces;
 

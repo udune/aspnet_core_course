@@ -1,4 +1,4 @@
-namespace NetCore.Data.DataModels;
+namespace NetCore_Data.DataModels;
 
 public class User
 {

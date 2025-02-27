@@ -1,6 +1,6 @@
+using NetCore_Data.DataModels;
+using NetCore_Data.ViewModels;
 using NetCore_Services.Interfaces;
-using NetCore.Data.DataModels;
-using NetCore.Data.ViewModels;
 
 namespace NetCore_Services.Services;
 

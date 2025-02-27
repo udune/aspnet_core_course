@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using NetCore_Data.ViewModels;
 using NetCore_Services.Interfaces;
-using NetCore.Data.ViewModels;
 
 namespace NetCore.Controllers;
 

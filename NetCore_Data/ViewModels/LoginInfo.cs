@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NetCore.Data.ViewModels;
+namespace NetCore_Data.ViewModels;
 
 public class LoginInfo
 {
