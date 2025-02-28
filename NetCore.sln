@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore_Data", "NetCore_Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore_Services", "NetCore_Services\NetCore_Services.csproj", "{BB57555F-DF9E-4C61-B0CC-EB7090C6252A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore_Migration", "NetCore_Migration\NetCore_Migration.csproj", "{BE0A67AE-C1CB-45D1-93CE-52E99C333CF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{BB57555F-DF9E-4C61-B0CC-EB7090C6252A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB57555F-DF9E-4C61-B0CC-EB7090C6252A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB57555F-DF9E-4C61-B0CC-EB7090C6252A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0A67AE-C1CB-45D1-93CE-52E99C333CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0A67AE-C1CB-45D1-93CE-52E99C333CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0A67AE-C1CB-45D1-93CE-52E99C333CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0A67AE-C1CB-45D1-93CE-52E99C333CF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

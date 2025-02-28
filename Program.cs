@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using NetCore_Services.Data;
 using NetCore_Services.Interfaces;
 using NetCore_Services.Services;
 
@@ -12,6 +14,9 @@ public class Program
         // Add services to the container.
         builder.Services.AddControllersWithViews();
         builder.Services.AddScoped<IUser, UserService>();
+        builder.Services.AddDbContext<CodeFirstDbContext>(options => 
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), 
+                migration => migration.MigrationsAssembly("NetCore_Migration")));
         builder.Services.AddMvc();
 
         var app = builder.Build();

@@ -8,27 +8,32 @@
 
     <ItemGroup>
         <ProjectReference Include="NetCore_Data\NetCore_Data.csproj" />
+        <ProjectReference Include="NetCore_Migration\NetCore_Migration.csproj" />
         <ProjectReference Include="NetCore_Services\NetCore_Services.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Remove="NetCore_Data\**" />
       <Compile Remove="NetCore_Services\**" />
+      <Compile Remove="NetCore_Migration\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="NetCore_Data\**" />
       <EmbeddedResource Remove="NetCore_Services\**" />
+      <EmbeddedResource Remove="NetCore_Migration\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Remove="NetCore_Data\**" />
       <Content Remove="NetCore_Services\**" />
+      <Content Remove="NetCore_Migration\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="NetCore_Data\**" />
       <None Remove="NetCore_Services\**" />
+      <None Remove="NetCore_Migration\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -42,6 +47,18 @@
       <_ContentIncludedByDefault Remove="NetCore_Services\obj\NetCore_Services.csproj.nuget.dgspec.json" />
       <_ContentIncludedByDefault Remove="NetCore_Services\obj\project.assets.json" />
       <_ContentIncludedByDefault Remove="NetCore_Services\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Migration\obj\NetCore_Migration.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Migration\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Migration\obj\project.packagespec.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" />
     </ItemGroup>
 
 </Project>
