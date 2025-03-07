@@ -16,24 +16,28 @@
       <Compile Remove="NetCore_Data\**" />
       <Compile Remove="NetCore_Services\**" />
       <Compile Remove="NetCore_Migration\**" />
+      <Compile Remove="NetCore_Databases\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="NetCore_Data\**" />
       <EmbeddedResource Remove="NetCore_Services\**" />
       <EmbeddedResource Remove="NetCore_Migration\**" />
+      <EmbeddedResource Remove="NetCore_Databases\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Remove="NetCore_Data\**" />
       <Content Remove="NetCore_Services\**" />
       <Content Remove="NetCore_Migration\**" />
+      <Content Remove="NetCore_Databases\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="NetCore_Data\**" />
       <None Remove="NetCore_Services\**" />
       <None Remove="NetCore_Migration\**" />
+      <None Remove="NetCore_Databases\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -50,6 +54,9 @@
       <_ContentIncludedByDefault Remove="NetCore_Migration\obj\NetCore_Migration.csproj.nuget.dgspec.json" />
       <_ContentIncludedByDefault Remove="NetCore_Migration\obj\project.assets.json" />
       <_ContentIncludedByDefault Remove="NetCore_Migration\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Databases\obj\NetCore_Databases.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Databases\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="NetCore_Databases\obj\project.packagespec.json" />
     </ItemGroup>
 
     <ItemGroup>

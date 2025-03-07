@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NetCore_Data.DataModels;
 
+[Table("UserRole")]
 public class UserRole
 {
     [Key, StringLength(50), Column(TypeName = "varchar(50)")]

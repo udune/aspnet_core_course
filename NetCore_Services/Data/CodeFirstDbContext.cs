@@ -12,6 +12,8 @@ public class CodeFirstDbContext : DbContext
     }
     
     public DbSet<User> Users { get; set; }
+    public DbSet<UserRole> UserRoles { get; set; }
+    public DbSet<UserRolesByUser> UserRolesByUsers { get; set; }
     
     // 메서드 상속, 부모 클래스에서 OnModelCreating 메서드가 virtual
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -21,6 +23,6 @@ public class CodeFirstDbContext : DbContext
         modelBuilder.Entity<UserRolesByUser>()
             .HasKey(user => new { user.UserId, user.RoleId });
 
-        modelBuilder.Entity<User>().HasIndex(c => new { c.UserEmail });
+        modelBuilder.Entity<User>().HasIndex(c => new { c.UserEmail }).IsUnique();
     }
 }
